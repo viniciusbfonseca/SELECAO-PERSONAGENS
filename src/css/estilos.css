@@ -110,4 +110,9 @@ main{
     border-radius: 5px;
 }
 
+.selecao-de-personagens .lista-de-personagens .personagem.selecionado{
+    border: 2px solid var(--cor-azul-media);
+    animation: c-glowing-blue;
+}
+
 
