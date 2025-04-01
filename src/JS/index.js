@@ -15,3 +15,4 @@ OBJETIVO 2 -  QUANDO PASSAR O MOUSE EM CIMA DO PERSONAGEM, TROCAR A IMAGEM E NOM
 
 */ 
 
+const personagens = document.
