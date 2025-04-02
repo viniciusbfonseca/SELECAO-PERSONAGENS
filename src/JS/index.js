@@ -15,4 +15,10 @@ OBJETIVO 2 -  QUANDO PASSAR O MOUSE EM CIMA DO PERSONAGEM, TROCAR A IMAGEM E NOM
 
 */ 
 
-const personagens = document.
+const personagens = document.querySelectorAll('.personagem');
+
+personagens.forEach((personagem) => { 
+    personagem.addEventListener('mouseenter', () => {
+        personagem.classList.add('selecionado');
+    })
+})
