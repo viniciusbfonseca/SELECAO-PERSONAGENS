@@ -6,6 +6,10 @@ const personagens = document.querySelectorAll('.personagem');
 personagens.forEach((personagem) => {
     personagem.addEventListener('mouseenter', () => {
 
+        const idSelecionado = personagem.attributes.id.value;
+
+        if(idSelecionado === 'ultron') return;
+
         // OBJETIVO 1 - QUANDO PASSAR O MOUSE EM CIMA DO PERSONAGEM TEMOS QUE:
 
         // - COLOCAR A CLASSE SELECIONADO NO PERSONAGEM QUE POSSAMOS O MOUSE EM CIMA PARA ADICIONAR ANIMAÇÃO NELE
@@ -22,8 +26,6 @@ personagens.forEach((personagem) => {
 
         //  Alterar o nome do jogador 1 
 
-
-        const idSelecionado = personagem.attributes.id.value;
 
         const imagemJogador1 = document.getElementById('personagem-jogador-1');
         imagemJogador1.src = `./src/imagens/${idSelecionado}.png`
