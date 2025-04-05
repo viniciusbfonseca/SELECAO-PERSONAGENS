@@ -22,6 +22,17 @@ personagens.forEach((personagem) => {
 
         //  Alterar o nome do jogador 1 
 
+
+        const idSelecionado = personagem.attributes.id.value;
+
+        const imagemJogador1 = document.getElementById('personagem-jogador-1');
+        imagemJogador1.src = `./src/imagens/${idSelecionado}.png`
+
+        
+        const nomeJogador1 = document.getElementById('nome-jogador-1');
+        const nomeSelecionado = personagem.getAttribute('data-name');
+        nomeJogador1.innerHTML = nomeSelecionado;
+
     });
 });
 
